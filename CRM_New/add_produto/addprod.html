@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Produto | Hello Stock</title>
+  <link rel="icon" type="image/x-icon" href="https://blog.trinks.com/wp-content/uploads/2020/11/Op%C3%A7%C3%A3o-1-5.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- CSS do cabeçalho -->
+<link rel="stylesheet" href="../cabecalho.css">
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+<!-- JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+
+<style>
+           .form-control:focus{
+             border-color: #eea236; /* colocando cor laranja quando clicko no input do login */
+           }
+         </style>
+
+           
+
+</head>
+<body>
+
+<?php 
+
+include '..\config.php';
+include '..\cabecalhologin.html';
+
+?>
+
+
+<div class="container-fluid">
+      <form action="add_produto.php" method="post" class="row col-sm-4 col-sm-offset-4 ">
+
+        <div >
+          <div class="title">
+            <h1 style="color: #009CFF;" >Cadastrar Produto</h1>
+            <br>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Código</label>
+          <input type="number" required class="form-control" name="pro_cod" id="pro_cod" placeholder="Insira o Codigo" required>
+        </div>
+
+        <div class="form-group">
+          <label>Marca</label>
+          <input type="e-mail" class="form-control" name="pro_nome" id="pro_nome" placeholder="Marca do Produto">
+        </div>
+
+        <div class="form-group">
+          <label>Produto</label>
+          <input type="tel" class="form-control" name="pro_sup" id="pro_sup" placeholder="Item">
+        </div>
+
+        <div class="form-group">
+          <label>Descrição</label>
+          <input type="text" class="form-control" name="pro_descricao" id="pro_descricao" placeholder="Descricao">
+        </div>
+
+        <div class="form-group">
+          <label>Valor Pago</label>
+          <input type="number" class="form-control" name="pro_valorpago" id="pro_valorpago" placeholder="Valor">
+        </div>
+
+        <div class="form-group">
+          <label>Valor Venda</label>
+          <input type="number" class="form-control" name="pro_valorvenda" id="pro_valorvenda" placeholder="Venda">
+        </div>
+
+        <div class="form-group">
+          <label>Quantidade</label>
+          <input type="number" class="form-control" name="pro_quantidade" id="pro_quantidade" placeholder="Quantidade">
+        </div>
+
+        <div class="form-group">
+          <label>Imagem</label>
+          <input type="url" class="form-control" name="imagens" id="imagens" placeholder="Imagem URL">
+        </div>
+
+        <div class="form-group">
+          <label>Promoção</label>
+          <input type="text" class="form-control" name="pro_promocoes" id="pro_promocoes" placeholder="Promocao">
+        </div>
+
+        <div class="form-group">
+          <label>Valor Desconto</label>
+          <input type="number" class="form-control" name="pro_valordesconto" id="pro_valordesconto" placeholder="Promocao">
+        </div>
+
+        <div class="form-group">
+          <label>Localidade </label>
+          <input type="text" required class="form-control" name="localidade" id="localidade" placeholder="Localizacao do produto" required>
+        </div>
+
+        <div class="form-group ">
+          <button style="background-color: #009CFF" name="cadastrar" class="form-control" type="submit" value="cadastrar"  ><h5 style="color: #FFF;" >Cadastrar</h5></button>
+        </div>
+
+      </form> <!--fim form-->
+
+    </div> <!--fim class do form-->
+</body>
+</html>

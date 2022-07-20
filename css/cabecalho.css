@@ -1,0 +1,63 @@
+.container{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 45px;
+    padding-top: 12px;
+    background-color: rgb(255, 0, 0);
+  }
+  .container {
+    color: rgb(0, 0, 0);
+    height: 100%;
+    overflow: hidden;
+    background: #333641;
+  }
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+  h1{
+    font-size: 50px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background: 50% 100%/10% 50% no-repeat radial-gradient(ellipse at bottom, rgb(0, 0, 0), transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+            animation: reveal 5000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 4900ms;
+  }
+  @-webkit-keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }/*  ESPAÇAMENTO*/
+  @keyframes reveal {
+    80% {
+      letter-spacing: 18px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  } /*  ESPAÇAMENTO*/
+  @-webkit-keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(0, 0, 0);
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(0, 0, 0);
+    }
+  }/* SOMBRA */

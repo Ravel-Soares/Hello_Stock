@@ -1,0 +1,57 @@
+<HTML>
+
+<head>
+    <!--links-->
+    <link rel="stylesheet" href="estilomsg.css">
+
+    <title>Cadastrar E-mail</title>
+</head>
+
+
+<body>
+        
+    <header> 
+        <h1> Envie uma Mensagem </h1>
+    </header> <br><br>
+        <section>
+            <form action="emails.php" method="post">
+
+                <div>
+                    <label>Cliente</label>
+                    <input type="text" name="cliente" required>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div>
+                    <label>Assunto</label>
+                    <input type="text" name="assunto"required>
+                </div>
+                
+                <div>
+                    <label>Mensagem</label>
+                    <textarea rows="10" name="msg" required> </textarea>
+                </div>
+
+                <div>
+                    <label>Operador</label>
+                    <input type="text" name="operador" required>
+                </div>
+
+                <div>
+                <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </section>
+       
+
+    <a href='../'>Voltar</a>
+  
+    
+</body>
+
+</HTML>
